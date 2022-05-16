@@ -17,4 +17,4 @@ jobs:
       - run: |
           npm ci
           mkdir ~/azurite
-          start-process -FilePath "azurite-blob.cmd" -ArgumentList ("-s", "-l", "$env:USERPROFILE/azurite")
+          start-process -FilePath "./node_modules/.bin/azurite-blob.cmd" -ArgumentList ("-s", "-l", "$env:USERPROFILE/azurite")
