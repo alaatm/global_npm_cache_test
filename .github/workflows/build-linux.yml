@@ -17,4 +17,4 @@ jobs:
       - run: |
           npm ci
           mkdir ~/azurite
-          azurite-blob -s -l ~/azurite &
+          ./node_modules/.bin/azurite-blob -s -l ~/azurite &
