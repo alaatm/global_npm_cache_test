@@ -15,6 +15,6 @@ jobs:
           node-version: 14
           cache: "npm"
       - run: |
-          npm i -g azurite
+          npm ci
           mkdir ~/azurite
           start-process -FilePath "azurite-blob.cmd" -ArgumentList ("-s", "-l", "$env:USERPROFILE/azurite")
